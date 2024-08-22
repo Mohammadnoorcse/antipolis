@@ -15,7 +15,7 @@
   ],
   "routes": [
     {
-      "src": "/api/contents/(?<id>[^/]+)",
+      "src": "api/**/*.js",
       "dest": "/api/contents/[id].js?id=$id",
       "methods": ["GET", "OPTIONS"],
       "headers": {
