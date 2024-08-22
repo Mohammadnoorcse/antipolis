@@ -5,9 +5,9 @@ import { Animal } from '@/lib/models';
 
 
 cloudinary.config({
-  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
-  api_key: process.env.CLOUDINARY_API_KEY,
-  api_secret: process.env.CLOUDINARY_API_secret,
+  cloud_name: process.env.name,
+  api_key: process.env.key,
+  api_secret: process.env.secret,
 });
 
 export async function POST(request) {
